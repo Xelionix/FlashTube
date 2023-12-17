@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashTube</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #e62117;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        main {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        #flash-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        #flash-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        FlashTube
+    </header>
+
+    <main>
+        <h2>Welcome to FlashTube!</h2>
+        <div id="flash-container">
+            <!-- Replace 'your-flash-video-file.swf' with the actual file path or URL of your Flash video file -->
+            <embed id="flash-video" src="your-flash-video-file.swf" type="application/x-shockwave-flash">
+        </div>
+    </main>
+
+</body>
+</html>
